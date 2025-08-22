@@ -6,13 +6,30 @@ public class Main {
 
         Contact contact1 = new Contact("Alice", "123-456-7890", "01-01-1990");
         Contact contact2 = new Contact("Bob", "234-567-8901", "02-02-1992");
-        Contact contact3 = new Contact("Charlie", "345-678-9012", "03-03-1993");
-        Contact contact4 = new Contact("David", "456-789-0123", "04-04-1994");
+        // Contact contact3 = new Contact("Charlie", "345-678-9012", "03-03-1993");
+        // Contact contact4 = new Contact("David", "456-789-0123", "04-04-1994");
 
-        Contact copyContact1 = new Contact(contact1);
-        Contact copyContact2 = new Contact(contact3);
+        // Contact copyContact1 = new Contact(contact1);
+        // Contact copyContact2 = new Contact(contact3);
 
-        contact1.setBirthDate("01-01-1989");
+        // contact1.setBirthDate("01-01-1989");
+
+        Contact[] contacts = {contact1, contact2};
+        ContactManager contactManager = new ContactManager(contacts);
+
+        // Test the getContact method
+        Contact retrievedContact = contactManager.getContact(0);
+        System.out.println(retrievedContact.getName());
+
+        // Test the setContact method
+        Contact newContact = new Contact("Charlie", "345-678-9012", "03-03-1994");
+        contactManager.setContact(newContact, 0);
+
+        // Verify that the contact was updated
+        retrievedContact = contactManager.getContact(0);
+        System.out.println(retrievedContact.getName());
+
+
 
     }
 }
