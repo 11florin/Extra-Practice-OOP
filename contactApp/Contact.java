@@ -57,7 +57,7 @@ public class Contact {
     }
 
     public int toAge(String birthDate) {
-        LocalDate parsedBirthDate = LocalDate.parse(birthDate, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        LocalDate parsedBirthDate = LocalDate.parse(birthDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         LocalDate currentDate = LocalDate.now();
         Period period = Period.between(parsedBirthDate, currentDate);
         return period.getYears();
