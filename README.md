@@ -41,17 +41,22 @@ ContactManager.java// Manages a list of contacts
 ## Example Usage
 
 Name: John Doe
-Phone number: 555-123-4567
-Birth Date: 01-01-1985
-Age: 39 year old
 
+Phone number: 555-123-4567
+
+Birth Date: 01-01-1985
+
+Age: 39 year old
 
 You have 8 contacts. Enter 'continue' to edit them: continue
 
 Choose an index from 0 to 7: 3
-	Name: Michael Brown
-	Phone Number: 555-000-1111
-	Birth Date: 15-05-1992
+
+Name: Michael Brown
+
+Phone Number: 555-000-1111
+
+Birth Date: 15-05-1992
 
  ## Learning Outcomes
 
