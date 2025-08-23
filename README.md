@@ -36,7 +36,7 @@ ContactManager.java// Manages a list of contacts
 ## ▶️ How to Run
 1. Clone this repository:
    ```bash
-   git clone https:
+   git clone https: https://github.com/11florin/Extra-Practice-OOP.git
 
 ## Example Usage
 
@@ -67,6 +67,6 @@ Formatting and parsing dates with DateTimeFormatter.
 
 Applying OOP principles in a small but complete project.
 
-##📜 Licence
+## Licence
 
 This project is released under the MIT Licence – feel free to use, modify, and share it.
