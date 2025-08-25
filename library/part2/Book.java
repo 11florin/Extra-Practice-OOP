@@ -55,6 +55,13 @@ public class Book {
         this.price = price;
     }
 
+    @Override
+    public int hashCode() {
+    return Objects.hash(title, author, rating, price);
+
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (o == this)
             return true;
